@@ -171,7 +171,7 @@
     /* background-color: #a02323; */
     display: flex;
     flex-direction: row;
-    gap: 15px;
+
     
 
 }
@@ -184,9 +184,20 @@
     margin-top: 5px;
 }
 .search-cadidate-keyboard-col-p{
-    width: 20%;
+    width: 15%;
+}
+.search-cadidate-keyboard-col-p-mx{
+    width: 15%;
 }
 .search-cadidate-keyboard-col-p p{
+    font-size: 17px;
+    /* color: #141B5F; */
+    color: black;
+    margin-bottom: 10px;
+    user-select: none;
+    margin-top: 5px;
+}
+.search-cadidate-keyboard-col-p-mx p{
     font-size: 16px;
     /* color: #141B5F; */
     color: black;
