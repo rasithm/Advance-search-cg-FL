@@ -313,11 +313,16 @@
     height: auto;
     /* background-color: #bb9ddb; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom: 10px;
 }
-.search-cadidate-exprience p{
-    font-size: 16px;
+.search-cadidate-exprience-p{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.search-cadidate-exprience-p p{
+    font-size: 17px;
     /* color: #141B5F; */
     margin-bottom: 5px;
     user-select: none;
