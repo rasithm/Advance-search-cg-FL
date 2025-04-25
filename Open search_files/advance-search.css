@@ -445,10 +445,19 @@
 .Employement-body-col{
     display: flex;
     flex-direction: row;
+    width: 50%;
     margin-bottom: 15px;
 }
+.Employement-body-col-full{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
 .Employement-body-col-p{
-    width: 15%;
+    display: flex;
+    /* background-color: #005bb5; */
+    width: 30%;
+    align-items: center;
 }
 
 .select{
@@ -614,10 +623,23 @@ user-select: none;
 }
 
 
-.select-candidate.active {
-    background-color: #ff7f00; /* Highlight color */
+/* .select-candidate.active {
+    background-color: #ff7f00; 
     color: white;
     border-color: #ff7f00;
+} */
+.select-candidate {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+    border: 1px solid #ccc;
+}
+
+.select-candidate.active {
+    background-color: #FFBD03; /* Yellow for selected */
+    color: black;
 }
 
 .search-cadidate-btn{

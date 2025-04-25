@@ -81,4 +81,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    
+    document.querySelectorAll('.select-candidate').forEach(item => {
+        item.addEventListener('click', function() {
+            const checkbox = this.querySelector('.gender-checkbox');
+            checkbox.checked = !checkbox.checked;
+            this.classList.toggle('active', checkbox.checked);
+        });
+    });
+
 })

@@ -32,7 +32,7 @@ Open search
 
 
 <script src="./Open search_files/post.js.download"></script><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
-<script src="./Open search_files/advance-search.js.download"></script>
+<script src="./Open search_files/advance-search.js"></script>
 <script src="./Open search_files/advance-search-mul-keyword.js.download"></script>
 <script src="./Open search_files/post.js.download"></script>
 
@@ -61,6 +61,7 @@ Open search
 
     </style>     
   <style type="text/css" id="mytempCss">._8mqQwQ { display: none; } ._1TWLMK.icF5zO { opacity: 0.01; }</style></head>
+  
   <body>
     <div class="overlay" id="overlay"></div>
     <div class="parent" id="parent">
@@ -730,13 +731,16 @@ Open search
                                         </div>
                                         
                                         <div class="gender-select-candidate-div">
-                                            <div class="select-candidate">
+                                            <div class="select-candidate" data-gender="male">
+                                                <input type="checkbox" hidden class="gender-checkbox"  value="male">
                                                 male
                                             </div>
-                                            <div class="select-candidate">
+                                            <div class="select-candidate" data-gender="female">
+                                                <input type="checkbox" hidden class="gender-checkbox"  value="female">
                                                 female
                                             </div>
-                                            <div class="select-candidate">
+                                            <div class="select-candidate" data-gender="others">
+                                                <input type="checkbox" hidden class="gender-checkbox"  value="others">
                                                 others
                                             </div>
                                         </div>
@@ -807,36 +811,43 @@ Open search
                                     
                                 </div>
                                 <div class="Employement-body" id="additional-body" style="display: none;">
-                                    <div class="Employement-body-col">
-                                        <div class="Employement-body-col-p">
-                                            <p>Verified</p>
-                                        </div>
-                                        
-                                        <div class="verification-select-candidate-div">
-                                            <div class="select-candidate">
-                                                E-mail
-                                            </div>
-                                            <div class="select-candidate">
-                                                Phone
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    
-                                    
-                                    <div class="Employement-body-col">
-                                        <div class="Employement-body-col-p">
-                                            <p>Resume Attached</p>
-                                        </div>
-                                        
-                                        <div class="resume-select-candidate-div">
-                                            <div class="select-candidate">
-                                                Must
-                                            </div>
-                                            <div class="select-candidate">
-                                                Not need
+                                    <div class="Employement-body-col-full">
+                                        <div class="Employement-body-col">
+                                            <div class="Employement-body-col-p">
+                                                <p>Verified</p>
                                             </div>
                                             
-                                        </div> 
+                                            <div class="verification-select-candidate-div">
+                                                <div class="select-candidate" data-gender="male">
+                                                    <input type="checkbox" hidden class="gender-checkbox"  value="email">
+                                                    Email
+                                                </div>
+                                                <div class="select-candidate" data-gender="female">
+                                                    <input type="checkbox" hidden class="gender-checkbox"  value="phone">
+                                                    Phone
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        
+                                        
+                                        <div class="Employement-body-col">
+                                            <div class="Employement-body-col-p">
+                                                <p>Resume Attached</p>
+                                            </div>
+                                            
+                                            <div class="resume-select-candidate-div">
+                                                <div class="select-candidate" data-gender="male">
+                                                    <input type="checkbox" hidden class="gender-checkbox"  value="must">
+                                                    Must
+                                                </div>
+                                                <div class="select-candidate" data-gender="female">
+                                                    <input type="checkbox" hidden class="gender-checkbox"  value="not need">
+                                                    Not need
+                                                </div>
+                                                
+                                                
+                                            </div> 
+                                        </div>
                                     </div>
                                     
                                     <div class="search-cadidate-exprience">

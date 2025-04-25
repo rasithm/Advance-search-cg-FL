@@ -96,13 +96,13 @@
     /*background-color: #f0f4f8;  */
     /* Light background color */
     transition: all 0.3s ease;   /* Smooth transition for effects */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  */
 }
 /* Focused input style (when user clicks/selects the input field) */
 .search-container input:focus{
     border: 1px solid #999999;  /* Blue border on focus */
     background-color: #fff;     /* White background when focused */
-    box-shadow: 0 4px 8px rgba(0, 91, 181, 0.3); /* Subtle blue shadow */
+    /* box-shadow: 0 4px 8px rgba(0, 91, 181, 0.3);  */
     outline: none;  /* Remove default outline */
 }
 
@@ -116,7 +116,7 @@
 /* Active state style when typing (focused and typed into) */
 .search-container input:active{
     border: 1px solid #005bb5;  /* Darker blue border when typing */
-    box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3); /* Darker shadow when typing */
+    /* box-shadow: 0 2px 8px rgba(0, 91, 181, 0.3);  */
 }
 
 /* Placeholder text customization */
